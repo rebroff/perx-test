@@ -42,13 +42,16 @@ main:
       weight: 160
     - identifier: customers
       title: Покупателям
-      url: '#'
+      url: '/customers/'
+      pageref: '/customers'
       weight: 200
     - identifier: owners
       title: Владельцам
-      url: '#'
+      url: '/owners/'
+      pageref: '/owners'
       weight: 300
     - identifier: about
       title: О компании
-      url: '#'
+      url: '/about/'
+      pageref: '/about'
       weight: 400

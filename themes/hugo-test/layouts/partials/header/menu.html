@@ -7,7 +7,7 @@
         {{ end }}
     </li>
 {{ $currentPage := . }}
-{{- range site.Menus.main }}
+{{ range site.Menus.main }}
     <li>
         {{ if $currentPage.IsMenuCurrent .Menu . }}
             <span class="_active"><strong>{{ .Title }}</strong></span>
@@ -28,5 +28,5 @@
         </ul>
         {{ end }}
     </li>
-{{- end }}
+{{ end }}
 </ul>
