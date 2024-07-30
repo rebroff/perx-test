@@ -1,0 +1,21 @@
+{{ $modelsData := partial "utils/get-data" "models" }}
+<table>
+    <thead>
+    <tr>
+        <th>Название модели</th>
+        <th>Название бренда</th>
+        <th>Идентификатор модели</th>
+        <th>№</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{ range sort $modelsData ".data.position" "asc" }}
+    <tr>
+        <td>{{ .data.name }}</td>
+        <td>{{ .data.brand.id }}</td>
+        <td>{{ .id }}</td>
+        <td>{{ .data.position }}</td>
+    </tr>
+    {{ end }}
+    </tbody>
+</table>

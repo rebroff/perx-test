@@ -1,0 +1,32 @@
+<ul>
+    <li>
+        {{ if .IsHome }}
+        <span class="_active">Главная</span>
+        {{ else }}
+        <a href="/">Главная</a>
+        {{ end }}
+    </li>
+{{ $currentPage := . }}
+{{- range site.Menus.main }}
+    <li>
+        {{ if $currentPage.IsMenuCurrent .Menu . }}
+            <span class="_active"><strong>{{ .Title }}</strong></span>
+        {{ else }}
+            <a href="{{ .URL }}">{{ .Title }}</a>
+        {{ end }}
+        {{ if .HasChildren }}
+        <ul>
+            {{ range .Children }}
+            <li>
+                {{ if $currentPage.IsMenuCurrent .Menu . }}
+                    <span class="_active"><strong>{{ .Title }}</strong></span>
+                {{ else }}
+                    <a href="{{ .URL }}">{{ .Title }}</a>
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </li>
+{{- end }}
+</ul>

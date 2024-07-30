@@ -1,0 +1,8 @@
+data:
+    model:
+        id: mazda6
+        collectionid: models
+    color: Красный
+    year: 2023
+    price: 3050000
+id: 12

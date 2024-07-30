@@ -1,0 +1,8 @@
+data:
+    model:
+        id: mazda6
+        collectionid: models
+    color: Белый
+    year: 2024
+    price: 3100000
+id: 10

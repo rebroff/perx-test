@@ -1,0 +1,12 @@
+data:
+    apps:
+        - trade_in_widget
+        - forms_widget
+        - in_stock_widget
+    brand:
+        id: renault
+        collectionid: brands
+    name: Duster
+    position: 40
+    slug: duster
+id: duster

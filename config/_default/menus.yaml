@@ -1,0 +1,54 @@
+main:
+    - identifier: catalog
+      title: Каталог автомобилей
+      url: /catalog/
+      pageref: /catalog
+      weight: 100
+    - identifier: brands
+      parent: catalog
+      title: Список брендов
+      url: /catalog/brands/
+      pageref: /catalog/brands
+      weight: 110
+    - identifier: models
+      parent: catalog
+      title: Модели
+      url: /catalog/models/
+      pageref: /catalog/models
+      weight: 120
+    - identifier: vehicles-mazda
+      parent: catalog
+      title: Автомобили Mazda в наличии
+      url: /catalog/vehicles-mazda/
+      pageref: /catalog/vehicles-mazda
+      weight: 130
+    - identifier: vehicles-renault
+      parent: catalog
+      title: Автомобили Renault в наличии
+      url: /catalog/vehicles-renault/
+      pageref: /catalog/vehicles-renault
+      weight: 140
+    - identifier: vehicles-2024
+      parent: catalog
+      title: Новинки
+      url: /catalog/vehicles-2024/
+      pageref: /catalog/vehicles-2024
+      weight: 150
+    - identifier: models-in-stock
+      parent: catalog
+      title: Модели в наличии
+      url: /catalog/models-in-stock/
+      pageref: /catalog/models-in-stock
+      weight: 160
+    - identifier: customers
+      title: Покупателям
+      url: '#'
+      weight: 200
+    - identifier: owners
+      title: Владельцам
+      url: '#'
+      weight: 300
+    - identifier: about
+      title: О компании
+      url: '#'
+      weight: 400

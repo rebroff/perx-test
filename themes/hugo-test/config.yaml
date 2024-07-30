@@ -1,0 +1,5 @@
+params:
+  brand: Бренд
+
+  favicon: "/images/favicon.ico"
+  faviconType: "image/x-icon"

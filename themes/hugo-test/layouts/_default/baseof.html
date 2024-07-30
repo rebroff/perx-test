@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head itemscope itemtype="http://schema.org/WPHeader">
+    {{ partial "head.html" . }}
+</head>
+<body data-layout="{{ .Layout }}">
+    {{ partial "header/header.html" . }}
+
+    <main class="main main-{{ .Layout }}">
+    {{ block "main" . }}
+        Main content
+    {{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+</body>
+</html>

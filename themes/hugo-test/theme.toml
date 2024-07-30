@@ -1,0 +1,12 @@
+name = "Hugo Test Theme"
+license = "Perx"
+licenselink = ""
+description = ""
+homepage = ""
+tags = []
+features = []
+min_version = "0.106.0"
+
+[author]
+  name = "Perx"
+  homepage = "https://perx.ru"

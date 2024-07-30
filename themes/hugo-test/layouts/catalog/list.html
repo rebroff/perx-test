@@ -1,0 +1,12 @@
+{{ define "main" }}
+    <h2>Каталог моделей</h2>
+    <ul>
+    {{ with . }}
+        {{ range .Pages }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+        {{ end }}
+    {{ end }}
+    </ul>
+{{ end }}

@@ -1,0 +1,12 @@
+data:
+    apps:
+        - trade_in_widget
+        - forms_widget
+        - in_stock_widget
+    brand:
+        id: mazda
+        collectionid: brands
+    name: Mazda6
+    position: 50
+    slug: mazda6
+id: mazda6

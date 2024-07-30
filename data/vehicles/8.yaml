@@ -1,0 +1,8 @@
+data:
+    model:
+        id: mazda3
+        collectionid: models
+    color: Красный
+    year: 2024
+    price: 2700000
+id: 8

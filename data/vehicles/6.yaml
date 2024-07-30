@@ -1,0 +1,8 @@
+data:
+    model:
+        id: logan
+        collectionid: models
+    color: Белый
+    year: 2024
+    price: 1300000
+id: 6

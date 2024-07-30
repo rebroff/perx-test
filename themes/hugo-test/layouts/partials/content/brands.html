@@ -1,0 +1,17 @@
+{{ $brandsData := partial "utils/get-data" "brands" }}
+<table>
+    <thead>
+        <tr>
+            <th>Идентификатор</th>
+            <th>Название</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{ range $brandsData }}
+        <tr>
+            <td>{{ .id }}</td>
+            <td>{{ .data.name }}</td>
+        </tr>
+    {{ end }}
+    </tbody>
+</table>

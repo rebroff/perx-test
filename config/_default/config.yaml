@@ -1,0 +1,255 @@
+baseURL: https://exeed.ru
+build:
+    _merge: none
+caches:
+    _merge: none
+    assets:
+        dir: :cacheDir
+        maxAge: -1
+    getcsv:
+        dir: :cacheDir
+        maxAge: -1
+    getjson:
+        dir: :cacheDir
+        maxAge: -1
+    getresource:
+        dir: :cacheDir
+        maxAge: -1
+    images:
+        dir: :cacheDir
+        maxAge: -1
+    modules:
+        dir: :cacheDir
+        maxAge: -1
+cascade:
+    _merge: none
+frontmatter:
+    _merge: none
+    publishDate:
+        - publishDate
+imaging:
+    _merge: none
+markup:
+    _merge: none
+mediatypes:
+    _merge: shallow
+    application/javascript:
+        suffixes:
+            - js
+    application/json:
+        suffixes:
+            - json
+    application/manifest+json:
+        suffixes:
+            - webmanifest
+    application/msword:
+        suffixes:
+            - doc
+    application/octet-stream:
+        suffixes:
+            - ""
+    application/pdf:
+        suffixes:
+            - pdf
+    application/ppt:
+        suffixes:
+            - ppt
+    application/rss+xml:
+        suffixes:
+            - xml
+            - rss
+    application/toml:
+        suffixes:
+            - toml
+    application/typescript:
+        suffixes:
+            - ts
+    application/vnd.ms-excel:
+        suffixes:
+            - xls
+    application/vnd.ms-powerpoint:
+        suffixes:
+            - ppt
+    application/vnd.openxmlformats-officedocument.presentationml.presentation:
+        suffixes:
+            - pptx
+    application/vnd.openxmlformats-officedocument.spreadsheetml.sheet:
+        suffixes:
+            - xlsx
+    application/vnd.openxmlformats-officedocument.wordprocessingml.document:
+        suffixes:
+            - docx
+    application/xml:
+        suffixes:
+            - xml
+    application/yaml:
+        suffixes:
+            - yaml
+            - yml
+    application/zip:
+        suffixes:
+            - zip
+    font/otf:
+        suffixes:
+            - otf
+    font/ttf:
+        suffixes:
+            - ttf
+    image/bmp:
+        suffixes:
+            - bmp
+    image/gif:
+        suffixes:
+            - gif
+    image/jpeg:
+        suffixes:
+            - jpg
+            - jpeg
+            - jpe
+            - jif
+            - jfif
+    image/png:
+        suffixes:
+            - png
+    image/svg+xml:
+        suffixes:
+            - svg
+    image/webp:
+        suffixes:
+            - webp
+    text/calendar:
+        suffixes:
+            - ics
+    text/css:
+        suffixes:
+            - css
+    text/csv:
+        suffixes:
+            - csv
+    text/html:
+        suffixes:
+            - html
+    text/jsx:
+        suffixes:
+            - jsx
+    text/plain:
+        suffixes:
+            - txt
+    text/tsx:
+        suffixes:
+            - tsx
+    text/x-sass:
+        suffixes:
+            - sass
+    text/x-scss:
+        suffixes:
+            - scss
+    video/3gpp:
+        suffixes:
+            - 3gpp
+            - 3gp
+    video/mp4:
+        suffixes:
+            - mp4
+    video/mpeg:
+        suffixes:
+            - mpg
+            - mpeg
+    video/ogg:
+        suffixes:
+            - ogv
+    video/webm:
+        suffixes:
+            - webm
+    video/x-msvideo:
+        suffixes:
+            - avi
+menus:
+    _merge: shallow
+minify:
+    _merge: none
+module:
+    _merge: none
+outputformats:
+    _merge: shallow
+    AMP:
+        baseName: index
+        isHTML: true
+        mediaType: text/html
+        name: AMP
+        path: amp
+        permalinkable: true
+        rel: amphtml
+    CALENDAR:
+        baseName: index
+        isPlainText: true
+        mediaType: text/calendar
+        name: CALENDAR
+        protocol: webcal://
+        rel: alternate
+    CSS:
+        baseName: styles
+        isPlainText: true
+        mediaType: text/css
+        name: CSS
+        rel: stylesheet
+    CSV:
+        baseName: index
+        isPlainText: true
+        mediaType: text/csv
+        name: CSV
+        rel: alternate
+    HTML:
+        baseName: index
+        isHTML: true
+        mediaType: text/html
+        name: HTML
+        permalinkable: true
+        rel: canonical
+    JSON:
+        baseName: index
+        isPlainText: true
+        mediaType: application/json
+        name: JSON
+        rel: alternate
+    ROBOTS:
+        baseName: robots
+        isPlainText: true
+        mediaType: text/plain
+        name: ROBOTS
+        rel: alternate
+    RSS:
+        baseName: index
+        mediaType: application/rss+xml
+        name: RSS
+        noUgly: true
+        rel: alternate
+    SITEMAP:
+        baseName: sitemap
+        mediaType: application/xml
+        name: SITEMAP
+        noUgly: true
+        rel: sitemap
+    WEBAPPMANIFEST:
+        baseName: manifest
+        isPlainText: true
+        mediaType: application/manifest+json
+        name: WEBAPPMANIFEST
+        rel: manifest
+params:
+    _merge: deep
+permalinks:
+    _merge: none
+privacy:
+    _merge: none
+security:
+    _merge: none
+services:
+    _merge: shallow
+sitemap:
+    _merge: none
+    filename: sitemap.xml
+taxonomies:
+    _merge: none
+theme:
+    - hugo-test
