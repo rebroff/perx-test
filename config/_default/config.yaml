@@ -1,4 +1,4 @@
-baseURL: https://exeed.ru
+baseURL: https://rebroff.github.io
 build:
     _merge: none
 caches:
