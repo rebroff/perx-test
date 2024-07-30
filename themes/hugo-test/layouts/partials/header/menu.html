@@ -3,7 +3,7 @@
         {{ if .IsHome }}
         <span class="_active">Главная</span>
         {{ else }}
-        <a href="/">Главная</a>
+        <a href="{{ .Site.BaseURL }}">Главная</a>
         {{ end }}
     </li>
 {{ $currentPage := . }}
