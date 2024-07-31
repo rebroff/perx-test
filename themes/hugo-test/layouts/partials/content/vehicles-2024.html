@@ -1,5 +1,7 @@
 {{ $models := partial "utils/get-data" "models" }}
 {{ $vehiclesData := partial "utils/get-data" "vehicles" }}
+{{ $year := 2024 }}
+
 <table>
     <thead>
     <tr>
@@ -11,7 +13,7 @@
     </thead>
     <tbody>
     {{ range $vehiclesData }}
-        {{ if eq .data.year 2024 }}
+        {{ if eq .data.year $year }}
         <tr>
             <td>[{{ (index $models .data.model.id).data.brand.id }}][{{ .data.model.id }}]</td>
             <td>{{ .data.color }}</td>
