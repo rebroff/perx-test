@@ -1,4 +1,4 @@
-{{ $models := partial "utils/get-data" "models" }}
+{{ $modelsData := partial "utils/get-data" "models" }}
 {{ $vehiclesData := partial "utils/get-data" "vehicles" }}
 {{ $brand := "mazda" }}
 
@@ -13,9 +13,9 @@
     </thead>
     <tbody>
     {{ range $vehiclesData }}
-        {{ if eq (index $models .data.model.id).data.brand.id $brand }}
+        {{ if eq (index $modelsData .data.model.id).data.brand.id $brand }}
         <tr>
-            <td>[{{ (index $models .data.model.id).data.brand.id }}][{{ .data.model.id }}]</td>
+            <td>[{{ (index $modelsData .data.model.id).data.brand.id }}][{{ .data.model.id }}]</td>
             <td>{{ .data.color }}</td>
             <td>{{ .data.year }}</td>
             <td>{{ .data.price }}</td>

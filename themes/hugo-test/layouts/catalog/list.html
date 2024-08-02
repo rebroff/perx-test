@@ -2,9 +2,13 @@
     <h2>Каталог моделей</h2>
     <ul>
     {{ with . }}
-        {{ range .Pages }}
+        {{ range $index, $value := .Pages }}
             <li>
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                {{ if (eq $index 0) }}
+                <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
+                {{ else }}
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                {{ end }}
             </li>
         {{ end }}
     {{ end }}
